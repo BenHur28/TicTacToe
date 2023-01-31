@@ -85,20 +85,20 @@ def main():
     while not (is_board_full(board)):
 
         if not (check_winner(board, "O")):
-            player1_input()
             if is_board_full(board):
                 print("Game is a Tie")
                 break
+            player1_input()
             print_board(board)
         else:
             print("O is the winner")
             break
 
         if not (check_winner(board, "X")):
-            player2_input()
             if is_board_full(board):
                 print("Game is a Tie")
                 break
+            player2_input()
             print_board(board)
         else:
             print("X is the winner")
